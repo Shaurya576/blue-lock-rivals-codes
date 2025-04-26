@@ -1,91 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blue Lock Rivals Codes</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
       margin: 0;
       padding: 20px;
-      color: #003366;
-      text-align: center;
+      color: #333;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      text-align: center;
+      color: #1e88e5;
+      font-size: 2.5rem;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .code-box {
-      background: white;
+    .code-container {
+      background-color: #e1f5fe;
       padding: 20px;
-      margin: 10px auto;
-      width: 90%;
-      max-width: 500px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      position: relative;
+      border-radius: 8px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .code-text {
+    .code-container h2 {
+      font-size: 1.8rem;
+      color: #01579b;
+    }
+
+    .code {
       font-size: 1.5rem;
-      font-weight: bold;
-      color: #00509e;
-    }
-
-    .copy-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: #007BFF;
-      border: none;
-      color: white;
-      padding: 5px 10px;
-      font-size: 1rem;
+      background-color: #c1eaff;
+      padding: 10px;
       border-radius: 5px;
+      margin: 10px 0;
+      display: inline-block;
+    }
+
+    .copy-button {
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      padding: 8px 16px;
       cursor: pointer;
-      transition: background 0.3s;
+      border-radius: 4px;
+      font-size: 1rem;
     }
 
-    .copy-btn:hover {
-      background-color: #0056b3;
+    .copy-button:hover {
+      background-color: #1565c0;
     }
 
+    .character-info {
+      background-color: #f1f8e9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .character-info h2 {
+      font-size: 1.8rem;
+      color: #388e3c;
+    }
+
+    .character-info p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .button-container {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
 
-  <h1>⚽ Blue Lock Rivals Codes ⚡</h1>
-  <p>🔥 Latest Working Codes (April 2025) 🔥</p>
+  <h1>Blue Lock Rivals Codes</h1>
 
-  <div class="code-box">
-    <div class="code-text" id="code1">BACHIRA!!</div>
-    <button class="copy-btn" onclick="copyCode('code1')">Copy</button>
+  <!-- Code Container 1 -->
+  <div class="code-container">
+    <h2>Code 1: REVAMP!</h2>
+    <div class="code" id="code1">REVAMP!</div>
+    <div class="button-container">
+      <button class="copy-button" onclick="copyCode('code1')">Copy Code</button>
+    </div>
   </div>
 
-  <div class="code-box">
-    <div class="code-text" id="code2">REVAMP!</div>
-    <button class="copy-btn" onclick="copyCode('code2')">Copy</button>
+  <!-- Code Container 2 -->
+  <div class="code-container">
+    <h2>Code 2: BACHIRA!!</h2>
+    <div class="code" id="code2">BACHIRA!!</div>
+    <div class="button-container">
+      <button class="copy-button" onclick="copyCode('code2')">Copy Code</button>
+    </div>
+  </div>
+
+  <!-- Character Info -->
+  <div class="character-info">
+    <h2>Blue Lock Rivals Character Styles and Flow</h2>
+    <p><strong>Style: </strong>The characters in Blue Lock Rivals showcase various styles, each bringing its own unique flavor to the game. Some characters excel in offensive techniques, while others specialize in defensive maneuvers.</p>
+
+    <p><strong>Flow: </strong>Flow refers to the synergy of the character's abilities in a game. Some characters are best used with specific playstyles and complementary abilities, while others may struggle if not paired properly.</p>
+
+    <h3>Best Combos:</h3>
+    <ul>
+      <li><strong>Isagi & Bachira: </strong>Great offensive synergy! Bachira's fluid style complements Isagi's vision and positioning. Their combined flow creates an unpredictable and exciting offensive game.</li>
+      <li><strong>Rin & Kaiser: </strong>Top-tier pairing for offensive control. Rin's precision and Kaiser’s tactical playstyle work exceptionally well together.</li>
+      <li><strong>Chigiri & Reo: </strong>Speed and skill blend together perfectly. Chigiri's fast pace mixed with Reo's passing game creates dynamic and fast-paced attacks.</li>
+    </ul>
+
+    <h3>Worst Combos:</h3>
+    <ul>
+      <li><strong>Meguru & Zantetsu: </strong>Their styles do not mesh well, often leading to chaotic and uncoordinated movements on the field.</li>
+      <li><strong>Jingo & Niko: </strong>Lack of communication makes this pair struggle to create meaningful plays, resulting in a weak combination.</li>
+    </ul>
   </div>
 
   <script>
-    function copyCode(id) {
-      var text = document.getElementById(id).innerText;
-      navigator.clipboard.writeText(text).then(function() {
-        alert('✅ Code Copied: ' + text);
-      }, function(err) {
-        alert('❌ Failed to copy code');
+    function copyCode(codeId) {
+      var codeText = document.getElementById(codeId).textContent;
+      navigator.clipboard.writeText(codeText).then(function() {
+        alert('Code copied to clipboard!');
+      }, function() {
+        alert('Failed to copy code!');
       });
     }
   </script>
-
+  
 </body>
 </html>
