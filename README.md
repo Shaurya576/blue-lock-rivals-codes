@@ -1,1 +1,0 @@
-# blue-lock-rivals-codes
