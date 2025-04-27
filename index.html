@@ -143,30 +143,36 @@
         }
         .rarity-world-class {
             background-color: #ffc107;
-            color: red; /* Initial red color */
-            background-image: linear-gradient(to top, red 50%, lightblue 50%); /* Fade effect */
-            background-size: 100% 200%;
-            transition: background-position 0.3s ease;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        .rarity-world-class:hover {
-            background-position: 0 100%; /* Hover effect if needed */
         }
         .rarity-mythic {
             background-color: #dc3545;
-            color: red;
         }
         .rarity-legendary {
             background-color: #007bff;
-            color: gold;
         }
         .rarity-epic {
             background-color: #28a745;
-            color: lightpurple;
         }
         .rarity-rare {
             background-color: #6c757d;
+        }
+        .world-class-text {
+            color: red;
+            background-image: linear-gradient(to top, red 50%, lightblue 50%);
+            background-size: 100% 200%;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .mythic-text {
+            color: red;
+        }
+        .legendary-text {
+            color: gold;
+        }
+        .epic-text {
+            color: lightpurple;
+        }
+        .rare-text {
             color: blue;
         }
         strong {
@@ -220,11 +226,11 @@
         <h3>Styles and Their Unique Rarities</h3>
         <p>In Blue Lock Rivals, each player possesses a unique style with varying degrees of rarity, influencing their in-game abilities and potential.</p>
         <ul>
-            <li><strong>World Class</strong> <span class="rarity-badge rarity-world-class">Rarest</span> - Represents the absolute pinnacle of skill and talent.</li>
-            <li><strong>Mythic</strong> <span class="rarity-badge rarity-mythic">Very Rare</span> - Extraordinary abilities that can turn the tide of any match.</li>
-            <li><strong>Legendary</strong> <span class="rarity-badge rarity-legendary">Rare</span> - Exceptional skills and a strong presence on the field.</li>
-            <li><strong>Epic</strong> <span class="rarity-badge rarity-epic">Uncommon</span> - Remarkable talents that make them valuable assets.</li>
-            <li><strong>Rare</strong> <span class="rarity-badge rarity-rare">Common</span> - Solid fundamental skills and potential for growth.</li>
+            <li><strong class="world-class-text">World Class</strong> <span class="rarity-badge rarity-world-class">Rarest</span> - Represents the absolute pinnacle of skill and talent.</li>
+            <li><strong class="mythic-text">Mythic</strong> <span class="rarity-badge rarity-mythic">Very Rare</span> - Extraordinary abilities that can turn the tide of any match.</li>
+            <li><strong class="legendary-text">Legendary</strong> <span class="rarity-badge rarity-legendary">Rare</span> - Exceptional skills and a strong presence on the field.</li>
+            <li><strong class="epic-text">Epic</strong> <span class="rarity-badge rarity-epic">Uncommon</span> - Remarkable talents that make them valuable assets.</li>
+            <li><strong class="rare-text">Rare</strong> <span class="rarity-badge rarity-rare">Common</span> - Solid fundamental skills and potential for growth.</li>
         </ul>
     </section>
     <section id="world-class-styles">
@@ -308,13 +314,7 @@
         <ul>
             <li>
                 <strong>Reo</strong> - <span class="style-description">A versatile player with excellent all-around skills and adaptability. He can contribute effectively in various positions on the field.</span>
-                <div class="image-container">
-                    <img src="https://us.oricon-group.com/upimg/sns/1000/1899/img1200/4f7c822e35f349725e612ddb57de3f03.jpg" alt="Reo
-                <strong>Karasu</strong> - <span class="style-description">A tactical midfielder with great passing accuracy and vision. He dictates the tempo of the game and creates opportunities for his teammates.</span>
-                <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQlA9n1U9YzIV3iQlBWHqfpuAtmEf2Qnr
-            </li>
-            <li>
+                <div
                 <strong>Nagi</strong> - <span class="style-description">A genius with incredible trapping and ball control. His unpredictable movements and unique techniques make him a tricky player to defend against.</span>
                 <div class="image-container">
                      <img src="https://i.pinimg.com/736x/fa/83/ef/fa83ef6782a0979b856ac969654a02f0.jpg" alt="Nagi's Legendary Style" />
