@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Okay, I've identified the issue and corrected the code to ensure the "Active Codes of April 2025" section is visible. Here's the revised HTML:<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,6 @@
             color: #333;
             display: flex;
             flex-direction: column;
-            /* Added this line to ensure content is positioned correctly */
             position: relative;
         }
         header {
@@ -27,7 +26,7 @@
             padding: 30px 20px;
             margin-bottom: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: relative; /* Added for stacking context */
+            position: relative;
             z-index: 2;
         }
         h1 {
@@ -49,8 +48,17 @@
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             border: 1px solid #e0e0e0;
-            position: relative; /* Added for stacking context */
+            position: relative;
             z-index: 2;
+        }
+        #codes { /* Added ID selector for the codes section */
+            position: relative; /* Ensure the section is positioned correctly */
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.95); /* Ensure background is visible */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h3 {
             color: #1a73e8;
@@ -84,13 +92,13 @@
             margin-top: 20px;
             font-size: 0.9rem;
             border-top: 1px solid #d0d0d0;
-            position: relative; /* Added for stacking context */
+            position: relative;
             z-index: 2;
         }
         .image-container {
             text-align: center;
             margin-top: 20px;
-            position: relative; /* Added for stacking context */
+            position: relative;
             z-index: 2;
         }
         .image-container img {
@@ -119,7 +127,7 @@
             color: white;
             margin-left: 10px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-            position: relative; /* Added for stacking context */
+            position: relative;
             z-index: 2;
         }
         .rarity-world-class {
@@ -140,13 +148,13 @@
         strong {
             font-weight: bold;
             color: #1a73e8;
-            position: relative; /* Added for stacking context */
+            position: relative;
             z-index: 2;
         }
         em {
             font-weight: bold;
             color: #dc3545;
-            position: relative; /* Added for stacking context */
+            position: relative;
             z-index: 2;
         }
         #fun-facts {
@@ -155,7 +163,7 @@
             padding: 20px;
             margin-top: 20px;
             border: 1px solid #e0e0e0;
-             position: relative; /* Added for stacking context */
+            position: relative;
             z-index: 2;
         }
         #fun-facts h2 {
@@ -309,7 +317,7 @@
                     <img src="https://i.pinimg.com/736x/96/b4/e8/96b4e86dd6c22027d4ea2b8f84f8cf07.jpg" alt="Otoya's Epic Style" />
                 </div>
             </li>
-             <li>
+            <li>
                 <strong>Hiori</strong> - <span class="style-description">A precise passer with excellent vision and the ability to create key assists. His strategic passes can open up scoring chances.</span>
                  <div class="image-container">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8ScsmlBlTW3PGkzicYyihjGyrKPKZ8sW6A&s" alt="Hiori's Epic Style" />
@@ -367,11 +375,11 @@
     <section id="fun-facts">
         <h2>Fun Facts About Blue Lock</h2>
         <ul>
-            <li>The concept of "ego" is central to the Blue Lock philosophy, emphasizing individual brilliance over teamwork.</li>
+            <li>The concept of "ego" is central to the Blue Lock philosophy, emphasising individual brilliance over teamwork.</li>
             <li>The training regimen in Blue Lock is intense and designed to push players to their absolute limits.</li>
             <li>The series features a diverse cast of characters with unique abilities and personalities.</li>
             <li>The matches in Blue Lock are highly strategic and action-packed, showcasing the players' skills and tactical thinking.</li>
-            <li>Blue Lock explores themes of ambition, rivalry, and the pursuit of excellence in the world of football.</li>
+            <li>Blue Lock explores themes of ambition, rivalry, and the pursuit of excellence in football.</li>
         </ul>
     </section>
     <footer>
