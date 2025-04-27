@@ -132,18 +132,31 @@
         }
         .rarity-world-class {
             background-color: #ffc107;
+            color: red; /* Initial red color */
+            background-image: linear-gradient(to top, red 50%, lightblue 50%); /* Fade effect */
+            background-size: 100% 200%;
+            transition: background-position 0.3s ease;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .rarity-world-class:hover {
+            background-position: 0 100%; /* Hover effect if needed */
         }
         .rarity-mythic {
             background-color: #dc3545;
+            color: red;
         }
         .rarity-legendary {
             background-color: #007bff;
+            color: gold;
         }
         .rarity-epic {
             background-color: #28a745;
+            color: lightpurple;
         }
         .rarity-rare {
             background-color: #6c757d;
+            color: blue;
         }
         strong {
             font-weight: bold;
@@ -291,8 +304,7 @@
             <li>
                 <strong>Karasu</strong> - <span class="style-description">A tactical midfielder with great passing accuracy and vision. He dictates the tempo of the game and creates opportunities for his teammates.</span>
                 <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQlA9n1U9YzIV3iQlBWHqfpuAtmEf2QnrNA&s" alt="Karasu's Legendary Style" />
-                </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQlA9n1U9YzIV3iQlBWHqfpuAtmEf2Qnr
             </li>
             <li>
                 <strong>Nagi</strong> - <span class="style-description">A genius with incredible trapping and ball control. His unpredictable movements and unique techniques make him a tricky player to defend against.</span>
