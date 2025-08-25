@@ -1,404 +1,113 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Lock Rivals - Codes and Styles</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #6366f1, #d946ef);
-            background-size: cover;
-            background-repeat: no-repeat;
-            min-height: 100vh;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-        header {
-            background-color: rgba(26, 115, 232, 0.9);
-            color: #f0f0f0; /* Changed white to a light gray */
-            text-align: center;
-            padding: 30px 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 2;
-        }
-        h1 {
-            margin: 0;
-            font-size: 3.5rem;
-            letter-spacing: 1px;
-            font-weight: 700;
-        }
-        h2 {
-            font-size: 2.2rem;
-            margin-top: 15px;
-            color: #e0e0e0; /* Changed white to a light gray */
-            font-weight: 500;
-        }
-        section {
-            padding: 30px;
-            margin: 20px;
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            border: 1px solid #e0e0e0;
-            position: relative;
-            z-index: 2;
-        }
-        #codes {
-            position: relative;
-            z-index: 2;
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        #codes h2 {
-            color: #1a73e8;
-            font-size: 2rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 5px;
-            font-weight: 700;
-            background: linear-gradient(to right, red, blue, purple, white);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        h3 {
-            color: #1a73e8;
-            font-size: 2rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 5px;
-            font-weight: 700;
-        }
-        h4 {
-            color: #333;
-            font-size: 1.3rem;
-            margin-top: 15px;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 25px;
-        }
-        li {
-            font-size: 1.1rem;
-            margin-bottom: 12px;
-            line-height: 1.7;
-        }
-        footer {
-            text-align: center;
-            background-color: rgba(26, 115, 232, 0.9);
-            color: #f0f0f0; /* Changed white to a light gray */
-            padding: 20px;
-            margin-top: 20px;
-            font-size: 0.9rem;
-            border-top: 1px solid #d0d0d0;
-            position: relative;
-            z-index: 2;
-        }
-        .image-container {
-            text-align: center;
-            margin-top: 20px;
-            position: relative;
-            z-index: 2;
-        }
-        .image-container img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 12px;
-            margin: 15px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .image-container img:hover {
-            transform: scale(1.04);
-        }
-        .style-description {
-            margin-top: 10px;
-            font-style: italic;
-            color: #555;
-            font-size: 1.1rem;
-        }
-        .rarity-badge {
-            display: inline-block;
-            padding: 8px 15px;
-            border-radius: 10px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: #f0f0f0; /* Changed white to a light gray */
-            margin-left: 10px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 2;
-        }
-        .rarity-world-class {
-            background-color: #ffc107;
-        }
-        .rarity-mythic {
-            background-color: #dc3545;
-        }
-        .rarity-legendary {
-            background-color: #007bff;
-        }
-        .rarity-epic {
-            background-color: #28a745;
-        }
-        .rarity-rare {
-            background-color: #6c757d;
-        }
-        .world-class-text {
-            background: linear-gradient(to right, blue, red);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        .mythic-text {
-            background: linear-gradient(to right, red, gold);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        .legendary-text {
-            background: linear-gradient(to right, gold, purple);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        .epic-text {
-            background: linear-gradient(to right, purple, blue);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        .rare-text {
-            color: blue;
-        }
-        strong {
-            font-weight: bold;
-            color: #1a73e8;
-            position: relative;
-            z-index: 2;
-        }
-        em {
-            font-weight: bold;
-            color: #dc3545;
-            position: relative;
-            z-index: 2;
-        }
-        #fun-facts {
-            background-color: #f8f9fa;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 20px;
-            border: 1px solid #e0e0e0;
-            position: relative;
-            z-index: 2;
-        }
-        #fun-facts h2 {
-            color: #1a73e8;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        #fun-facts ul {
-            list-style-type: disc;
-            padding-left: 25px;
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Blue Lock Rivals</h1>
-        <h2>Unleash Your Ego: Codes, Styles, and Strategies!</h2>
-    </header>
-    <section id="codes">
-        <h2>Active Codes of May 2025</h2>
-        <ul>
-            <li><strong>Code: OTOYA!!: 15 Lucky Style Spins</strong></li>
-            <li><strong>Code:CHEMREACTION!: 10 Lucky Flow Spins</strong></li>
-        </ul>
-    </section>
-    <section id="styles">
-        <h3>Styles and Their Unique Rarities</h3>
-        <p>In Blue Lock Rivals, each player possesses a unique style with varying degrees of rarity, influencing their in-game abilities and potential.</p>
-        <ul>
-            <li><strong class="world-class-text">World Class</strong> <span class="rarity-badge rarity-world-class">Rarest</span> - Represents the absolute pinnacle of skill and talent.</li>
-            <li><strong class="mythic-text">Mythic</strong> <span class="rarity-badge rarity-mythic">Very Rare</span> - Extraordinary abilities that can turn the tide of any match.</li>
-            <li><strong class="legendary-text">Legendary</strong> <span class="rarity-badge rarity-legendary">Rare</span> - Exceptional skills and a strong presence on the field.</li>
-            <li><strong class="epic-text">Epic</strong> <span class="rarity-badge rarity-epic">Uncommon</span> - Remarkable talents that make them valuable assets.</li>
-            <li><strong class="rare-text">Rare</strong> <span class="rarity-badge rarity-rare">Common</span> - Solid fundamental skills and potential for growth.</li>
-        </ul>
-    </section>
-    <section id="world-class-styles">
-        <h3>World Class Styles <span class="rarity-badge rarity-world-class">Rarest</span></h3>
-        <ul>
-            <li>
-                <strong>Sae</strong> - <span class="style-description">Unrivaled technical mastery and vision. His passes carve through defenses, and his shots possess laser-like accuracy. A true midfield maestro.</span>
-                <div class="image-container">
-                    <img src="https://us.oricon-group.com/upimg/detail/1000/1953/img660/272d8d665f9a23d307c872759d5336fd.jpg" alt="Sae's World-Class Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Kaiser</strong> - <span class="style-description">Boasts incredible scoring prowess and a commanding presence in the attacking third. His 'Kaiser Impact' shot is feared by goalkeepers worldwide.</span>
-                <div class="image-container">
-                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/01/michael-kaiser-blue-lock.jpg" alt="Kaiser's World-Class Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Don Lorenzo</strong> - <span class="style-description">A defensive titan with exceptional interception skills and tactical intelligence. His ability to shut down even the most potent attacks is legendary.</span>
-                <div class="image-container">
-                    <img src="https://i.pinimg.com/736x/43/8e/66/438e662ec35b718adc81f7f7407185ce.jpg" alt="Don Lorenzo's World-Class Style" />
-                </div>
-            </li>
-            <li>
-                <strong>NEL Isagi</strong> - <span class="style-description">An evolved form of Isagi's spatial awareness and direct shot ability. His meta-vision allows him to anticipate plays and strike with deadly precision.</span>
-                <div class="image-container">
-                    <img src="https://i.ytimg.com/vi/gLEGgsp7TL4/maxresdefault.jpg" alt="NEL Isagi's World-Class Style" />
-                     <strong>NEL RIN</strong> - <span class="style-description">Nel Rin wields shadows like blades, bending darkness to strike unseen. shot ability. His </span>
-                <div class="image-container">
-                    <img src="https://preview.redd.it/rins-pre-nel-performance-was-overrated-by-some-v0-temaa9t8yked1.jpg?width=613&format=pjpg&auto=webp&s=56443605b5eb44b8ebda9a7f55c7422e6e311b3b" alt="NEL RIN's World-Class Style" />
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section id="mythic-styles">
-        <h3>Mythic Styles <span class="rarity-badge rarity-mythic">Very Rare</span></h3>
-        <ul>
-            <li>
-                <strong>Yukimiya</strong> - <span class="style-description">Known for his incredible dribbling skills and agility on the ball. He can weave through defenses with grace and create scoring opportunities.</span>
-                <div class="image-container">
-                    <img src="https://i.pinimg.com/736x/91/52/cd/9152cdd9f28924f2d97fd9d95645e36e.jpg" alt="Yukimiya's Mythic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Kunigami</strong> - <span class="style-description">Possesses raw power and an exceptional shooting range. His direct shots are thunderous and can catch goalkeepers off guard.</span>
-                <div class="image-container">
-                    <img src="https://staticg.sportskeeda.com/editor/2024/12/11e6d-17354709364181-1920.jpg" alt="Kunigami's Mythic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Shidou</strong> - <span class="style-description">An unpredictable and instinctual striker with incredible finishing ability from any angle. His movements are erratic, making him difficult to mark.</span>
-                <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbNdrrxpUKmfssYRy-7xx0lA4IDg85eNUDg&s" alt="Shidou's Mythic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Rin</strong> - <span class="style-description">A highly skilled and strategic forward with exceptional technique and a keen eye for goal. His precise shots and tactical awareness make him a dangerous opponent.</span>
-                <div class="image-container">
-                    <img src="https://i.pinimg.com/736x/28/7b/5c/287b5c18b2fe724a3381397be2e4f1dc.jpg" alt="Rin's Mythic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>King</strong> - <span class="style-description">A powerful and charismatic player with strong leadership qualities. His physical prowess and determination inspire his team.</span>
-                <div class="image-container">
-                    <img src="https://i.pinimg.com/474x/e9/0b/c2/e90bc290f1e63bf6f0a2f5044f4c81d9.jpg" alt="King's Mythic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Aiku</strong> - <span class="style-description">A commanding defender with exceptional aerial ability and strong marking skills. His presence in the backline provides crucial stability.</span>
-                <div class="image-container">
-                    <img src="https://i.redd.it/aiku-official-art-vs-my-recolour-v0-omta4kh4ss8d1.jpg?width=1179&format=pjpg&auto=webp&s=6abe63c623562b83521b70ea192299dc87819f3b" alt="Aiku's Mythic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>NEL Bachira</strong> - <span class="style-description">An evolved form of Bachira's unpredictable dribbling, now enhanced with greater precision and tactical awareness within the Neo Egoist League.</span>
-                <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHW2abXZSrHGE1t7X1ZD2Z3jY1QVq50zVW0w&s" alt="NEL Bachira's Mythic Style" />
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section id="legendary-styles">
-        <h3>Legendary Styles <span class="rarity-badge rarity-legendary">Rare</span></h3>
-        <ul>
-            <li>
-                <strong>Reo</strong> - <span class="style-description">A
-                <strong>Nagi</strong> - <span class="style-description">A genius with incredible trapping and ball control. His unpredictable movements and unique techniques make him a tricky player to defend against.</span>
-                <div class="image-container">
-                     <img src="https://i.pinimg.com/736x/fa/83/ef/fa83ef6782a0979b856ac969654a02f0.jpg" alt="Nagi's Legendary Style" />
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section id="epic-styles">
-        <h3>Epic Styles <span class="rarity-badge rarity-epic">Uncommon</span></h3>
-        <ul>
-            <li>
-                <strong>Bachira</strong> - <span class="style-description">A highly creative dribbler with flair and unpredictable movements. His agility and unique ball control can unlock tight defenses.</span>
-                <div class="image-container">
-                    <img src="https://i.pinimg.com/736x/1f/a3/7d/1fa37d3d03e2fe6736b39453d9b803c3.jpg" alt="Bachira's Epic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Otoya</strong> - <span class="style-description">Known for his stealthy movements and ability to appear in crucial scoring positions. He's an opportunistic forward with a knack for finding the back of the net.</span>
-                <div class="image-container">
-                    <img src="https://i.pinimg.com/736x/96/b4/e8/96b4e86dd6c22027d4ea2b8f84f8cf07.jpg" alt="Otoya's Epic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Hiori</strong> - <span class="style-description">A precise passer with excellent vision and the ability to create key assists. His strategic passes can open up scoring chances.</span>
-                 <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8ScsmlBlTW3PGkzicYyihjGyrKPKZ8sW6A&s" alt="Hiori's Epic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Gagamaru</strong> - <span class="style-description">An exceptional goalkeeper with incredible reflexes and agility. His shot-stopping abilities make him a formidable last line of defense.</span>
-                <div class="image-container">
-                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/11/gagamaru.jpg" alt="Gagamaru's Epic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Kurona</strong> - <span class="style-description">A fast and agile winger with the ability to make quick runs and deliver crosses into the box. His speed on the flanks is a key asset.</span>
-                <div class="image-container">
-                    <img src="https://wallpapercave.com/wp/wp12276633.png" alt="Kurona's Epic Style" />
-                </div>
-            </li>
-            <li>
-                <strong>Igaguri</strong> - <span class="style-description">Despite lacking natural talent, Igaguri's unwavering determination and adaptability allow him to fill crucial support roles. His tenacity and surprising ability to exploit openings make him a valuable, if unconventional, asset.</span>
-                <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyW5UL_TmEipO6VyFbAXFyDLBa9jS2elgVNw&s" alt="Igaguri's Epic Style" />
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section id="rare-styles">
-        <h3>Rare Styles <span class="rarity-badge rarity-rare">Common</span></h3>
-        <ul>
-             <li>
-                <strong>Chigiri</strong> - <span class="style-description">Flash Anime Version</span>
-                <div class="image-container">
-                    <img src="data:image/jpeg;base64,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" alt="Chigiri's Rare Style">
-                </div>
-            </li>
-            <li>
-                <strong>Isagi</strong> - <span class="style-description">he is the main character</span>
-                <div class="image-container">
-                    <img src=data:image/jpeg;base64,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
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section id="fun-facts">
-        <h2>Fun Facts About Blue Lock</h2>
-        <ul>
-            <li>The concept of "ego" is central to the Blue Lock philosophy, emphasizing individual brilliance over teamwork.</li>
-            <li>The training regimen in Blue Lock is intense and designed to push players to their absolute limits.</li>
-            <li>The series features a diverse cast of characters with unique abilities and personalities.</li>
-            <li>The matches in Blue Lock are highly strategic and action-packed, showcasing the players' skills and tactical thinking.</li>
-            <li>Blue Lock explores themes of ambition, rivalry, and the pursuit of excellence in the world of football.</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2025 Blue Lock Rivals. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<!-- ================= BLUE LOCK RIVALS STYLES ================= -->
+
+<!-- Master Class -->
+<div class="rarity-title rarity-master">Master Class Styles</div>
+<ul class="style-list">
+    <li>
+        <strong>Loki</strong> — The trickster god with unmatched speed and technique.
+        <div class="image-container">
+            <img src="https://static.wikia.nocookie.net/bluelock/images/e/e8/Loki.png" alt="Loki Master Class Style - Blue Lock Rivals">
+        </div>
+    </li>
+</ul>
+
+<!-- Mythic -->
+<div class="rarity-title rarity-mythic">Mythic Styles</div>
+<ul class="style-list">
+    <li>
+        <strong>NEL Reo</strong> — Neo Egoist League all-rounder.
+        <div class="image-container">
+            <img src="https://images.openai.com/thumbnails/url/tI_IFnicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4O8KoqNUgP88vytkircAs2TCwO0s0yjCxMcQ7NSDLPNi_P8DKN96jwDku0TI1KcjMI8qgwicjwdi5QKwYAwiEo5Q" alt="NEL Reo Mythic Style - Blue Lock Rivals">
+        </div>
+    </li>
+    <li>
+        <strong>NEL Rin</strong> — Neo Egoist League genius striker.
+        <div class="image-container">
+            <img src="https://static.wikia.nocookie.net/bluelock/images/3/32/Rin_Itoshi_Anime.png" alt="NEL Rin Mythic Style - Blue Lock Rivals">
+        </div>
+    </li>
+    <li>
+        <strong>NEL Nagi</strong> — Neo Egoist League prodigy with aerial control.
+        <div class="image-container">
+            <img src="https://images.openai.com/thumbnails/url/qL0TBnicu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4uyK30ckktsygNNwxxSvUoq9IND3IpzDX0zyh2DCgvdCwId3PKMc6PrEozMzfJKXHLSK3K8Y_P83JOTlcrBgAx1yqb" alt="NEL Nagi Mythic Style - Blue Lock Rivals">
+        </div>
+    </li>
+    <!-- keep other mythic styles here like Kaiser, Isagi (but NOT Rin since removed) -->
+</ul>
+
+<!-- Legendary -->
+<div class="rarity-title rarity-legendary">Legendary Styles</div>
+<ul class="style-list">
+    <!-- Reo removed as requested -->
+    <li>
+        <strong>Isagi</strong> — Main protagonist with vision and adaptability.
+    </li>
+    <li>
+        <strong>Barou</strong> — The King of the Field.
+    </li>
+    <li>
+        <strong>Bachira</strong> — The dribbler with monster instincts.
+    </li>
+    <li>
+        <strong>Kunigami</strong> — The hero-striker with raw power.
+    </li>
+</ul>
+
+<!-- World Class -->
+<div class="rarity-title rarity-world">World Class Styles</div>
+<ul class="style-list">
+    <li>
+        <strong>Charles</strong> — Genius dribbler from Paris X Gen.
+        <div class="image-container">
+            <img src="https://static.wikia.nocookie.net/bluelock/images/1/17/Charles_Chevapravatdumrong.png" alt="Charles World Class Style - Blue Lock Rivals">
+        </div>
+    </li>
+    <li>
+        <strong>Shidou</strong> — Explosive forward with killer instinct.
+    </li>
+    <li>
+        <strong>Sae Itoshi</strong> — Midfield maestro from Real Madrid Youth.
+    </li>
+</ul>
+
+<!-- Rare -->
+<div class="rarity-title rarity-rare">Rare Styles</div>
+<ul class="style-list">
+    <li><strong>Chigiri</strong> — The speedster with crimson legs.</li>
+    <li><strong>Gagamaru</strong> — The goalkeeper turned striker.</li>
+    <li><strong>Igaguri</strong> — Wild card with unpredictable moves.</li>
+</ul>
+
+<!-- ================= BLUE LOCK RIVALS CODES ================= -->
+
+<div class="section" id="codes">
+    <h2>Blue Lock: Rivals Codes (August 2025)</h2>
+
+    <!-- Active Codes -->
+    <div class="rarity-title rarity-world">🎯 Active Codes</div>
+    <ul class="style-list">
+        <li>
+            <strong>8V8HYPE</strong> — 10 Lucky Spins and 5 Lucky Flow Spins
+            <span class="new">NEW</span>
+        </li>
+        <li>
+            <strong>WEWANTSPINS</strong> — 5 Lucky Spins
+            <span class="new">NEW</span>
+        </li>
+        <li>
+            <strong>2MINTERESTED!</strong> — 3 Lucky Spins
+            <span class="new">NEW</span>
+        </li>
+    </ul>
+
+    <!-- Expired Codes -->
+    <div class="rarity-title rarity-rare">❌ Expired Codes</div>
+    <ul class="style-list">
+        <li><strong>FLOW4YOU</strong> — 5 Lucky Flow Spins</li>
+        <li><strong>LUCKYSTRIKER</strong> — 7 Lucky Spins</li>
+        <li><strong>GOALS2025</strong> — 10 Lucky Spins</li>
+        <li><strong>TEAMBLUE</strong> — 3 Lucky Spins</li>
+    </ul>
+</div>
+
