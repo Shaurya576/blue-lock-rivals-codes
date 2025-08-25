@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0; padding: 0;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.imgur.com/your-stadium-wallpaper.jpg') center/cover;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://i.imgur.com/your-stadium-wallpaper.jpg') center/cover;
       color: white; font-family: 'Orbitron', sans-serif;
     }
     h1, h2 {
@@ -21,9 +21,9 @@
       width: 90%;
       max-width: 1000px;
       padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.55);
       border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
     }
     .rarity-title {
       text-align: center;
@@ -35,6 +35,11 @@
     .rare { background: linear-gradient(to right, lightblue, teal); }
     .mythic { background: linear-gradient(to right, purple, blueviolet); }
     .world { background: linear-gradient(to right, dodgerblue, navy); }
+    .codes-title {
+      background: linear-gradient(to right, gold, orange);
+      color: black;
+      font-weight: bold;
+    }
     ul { list-style: none; padding: 0; }
     li {
       display: flex;
@@ -58,12 +63,23 @@
       opacity: 0.85;
     }
     .codes ul li {
-      margin: 10px 0;
+      margin: 12px 0;
       font-size: 18px;
     }
     .codes {
       text-align: center;
-      background: rgba(0,0,50,0.7);
+      background: rgba(50, 30, 0, 0.8);
+      border: 2px solid gold;
+    }
+    .new-label {
+      color: lime;
+      font-weight: bold;
+      margin-left: 8px;
+      animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px lime; }
+      to { text-shadow: 0 0 15px lime; }
     }
   </style>
 </head>
@@ -71,13 +87,17 @@
 
   <h1>Blue Lock: Rivals</h1>
 
+  <!-- Codes Section (First & Highlighted) -->
   <div class="section codes">
-    <h2>Active Codes (August 2025)</h2>
+    <div class="rarity-title codes-title">🎁 Active Codes (August 2025)</div>
     <ul>
-      <li><strong>8V8HYPE</strong> — 10 Lucky Spins + 5 Flow Spins</li>
-      <li><strong>WEWANTSPINS</strong> — 5 Lucky Spins</li>
-      <li><strong>2MINTERESTED!</strong> — 3 Lucky Spins</li>
+      <li><strong>8V8HYPE</strong> — 10 Lucky Spins + 5 Lucky Flow Spins <span class="new-label">(NEW)</span></li>
+      <li><strong>WEWANTSPINS</strong> — 5 Lucky Spins <span class="new-label">(NEW)</span></li>
+      <li><strong>2MINTERESTED!</strong> — 3 Lucky Spins <span class="new-label">(NEW)</span></li>
     </ul>
+    <p style="font-size:14px; opacity:0.8; margin-top:8px;">
+      💡 Codes expire quickly — redeem them in-game before they’re gone!
+    </p>
   </div>
 
   <!-- Rare Styles -->
@@ -125,8 +145,7 @@
 </body>
 </html>
 
-</body>
-</html>
+
 
 
 
