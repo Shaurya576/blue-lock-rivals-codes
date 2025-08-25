@@ -1,129 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blue Lock: Rivals</title>
 
-<style>
-/* Custom Cursor */
-body {
-  cursor: url('/assets/blue-lock-cursor.cur'), auto;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 
-/* Rarity Header Gradients */
-.rarity-master { background: linear-gradient(to bottom, gold, crimson); color: white; padding: 8px; border-radius: 8px; font-size: 1.5rem; }
-.rarity-mythic { background: linear-gradient(to bottom, purple, black); color: white; padding: 6px; border-radius: 8px; font-size: 1.3rem; }
-.rarity-world { background: linear-gradient(to bottom, blue, navy); color: white; padding: 6px; border-radius: 8px; font-size: 1.3rem; }
-.rarity-legendary { background: linear-gradient(to bottom, orange, darkred); color: white; padding: 6px; border-radius: 8px; font-size: 1.3rem; }
-.rarity-epic { background: linear-gradient(to bottom, violet, indigo); color: white; padding: 6px; border-radius: 8px; font-size: 1.3rem; }
-.rarity-rare { background: linear-gradient(to bottom, lightblue, teal); color: white; padding: 6px; border-radius: 8px; font-size: 1.3rem; }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      cursor: url('assets/blue-lock-cursor.cur'), auto; /* Custom Blue Lock cursor */
+    }
 
-/* Character Entry Styling */
-.style-list img {
-  width: 50px; height: 50px; border-radius: 50%;
-  vertical-align: middle; margin-right: 12px;
-}
-.style-list li {
-  margin: 12px 0;
-  font-size: 1rem;
-}
-</style>
+    h1, h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: 20px 0;
+    }
 
-<section class="page-content">
+    .section {
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1000px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
 
-  <!-- Title -->
-  <h1 style="text-align:center; font-size: 2.5rem; margin-bottom: 0.5em;">Blue Lock: Rivals</h1>
+    /* Gradient headers */
+    .rarity-title {
+      font-size: 26px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-  <!-- Codes Section (First) -->
-  <div id="codes" style="margin-bottom: 2em;">
-    <h2 style="font-size:1.8rem;">🎯 Blue Lock: Rivals Codes (August 2025)</h2>
-    <ul class="style-list">
-      <li><strong>8V8HYPE</strong> — 10 Lucky Spins + 5 Lucky Flow Spins <span style="color: green;">NEW</span></li>
-      <li><strong>WEWANTSPINS</strong> — 5 Lucky Spins <span style="color: green;">NEW</span></li>
-      <li><strong>2MINTERESTED!</strong> — 3 Lucky Spins <span style="color: green;">NEW</span></li>
+    .rarity-rare {background: linear-gradient(to right, lightblue, teal);}
+    .rarity-epic {background: linear-gradient(to right, violet, indigo);}
+    .rarity-legendary {background: linear-gradient(to right, orange, darkred);}
+    .rarity-mythic {background: linear-gradient(to right, purple, black);}
+    .rarity-world {background: linear-gradient(to right, dodgerblue, navy);}
+    .rarity-master {background: linear-gradient(to right, gold, crimson);}
+
+    .codes {
+      background: linear-gradient(to right, #1a1a1a, #333);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    ul {list-style: none; padding: 0;}
+    li {
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+    }
+    li img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 2px solid white;
+      object-fit: cover;
+    }
+    .char-details {
+      display: flex;
+      flex-direction: column;
+    }
+    .char-details strong {
+      font-size: 18px;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+    .char-details span {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⚽ Blue Lock: Rivals ⚡</h1>
+
+  <!-- Codes Section -->
+  <div class="codes section">
+    <h2>🎁 Active Codes (August)</h2>
+    <ul>
+      <li><strong>8V8HYPE</strong> → 10 Lucky Spins + 5 Lucky Flow Spins</li>
+      <li><strong>WEWANTSPINS</strong> → 5 Lucky Spins</li>
+      <li><strong>2MINTERESTED!</strong> → 3 Lucky Spins</li>
     </ul>
-    <h3 class="rarity-rare" style="font-size:1.4rem; margin-top:1em;">❌ Expired Codes</h3>
-    <ul class="style-list">
-      <li><strong>FLOW4YOU</strong></li>
-      <li><strong>LUCKYSTRIKER</strong></li>
-      <li><strong>GOALS2025</strong></li>
-      <li><strong>TEAMBLUE</strong></li>
+
+    <h2>⏳ Expired Codes</h2>
+    <ul>
+      <li><strong>FLOWSTATE</strong></li>
+      <li><strong>GOKUPOWER</strong></li>
+    </ul>
+  </div>
+
+  <!-- Rare -->
+  <div class="section">
+    <div class="rarity-title rarity-rare">💠 Rare Styles</div>
+    <ul>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/e/e8/Yoichi_Isagi_Anime.png" alt="Isagi"><div class="char-details"><strong>⚡ Isagi Yoichi</strong><span>Visionary striker, master of adaptability.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/2/20/Hiori_Yo_Anime.png" alt="Hiori"><div class="char-details"><strong>🎯 Hiori Yo</strong><span>Playmaker with precision passing.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/5/55/Gin_Gagamaru_Anime.png" alt="Igaguri"><div class="char-details"><strong>🤣 Igaguri</strong><span>Comic relief with surprising moments.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/3/36/Hyoma_Chigiri_Anime.png" alt="Chigiri"><div class="char-details"><strong>🏃 Chigiri Hyoma</strong><span>The speedster with fiery determination.</span></div></li>
+    </ul>
+  </div>
+
+  <!-- Epic -->
+  <div class="section">
+    <div class="rarity-title rarity-epic">💎 Epic Styles</div>
+    <ul>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/7/71/Kurona_Ranmaru_Anime.png" alt="Kurona"><div class="char-details"><strong>⚡ Kurona Ranmaru</strong><span>Reliable teammate with sharp synergy.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/8/88/Meguru_Bachira_Anime.png" alt="Bachira"><div class="char-details"><strong>🎨 Bachira Meguru</strong><span>Dribbling genius with monster creativity.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/5/55/Gin_Gagamaru_Anime.png" alt="Gagamaru"><div class="char-details"><strong>🛡️ Gagamaru Gin</strong><span>The flexible wall in front of goal.</span></div></li>
+    </ul>
+  </div>
+
+  <!-- Legendary -->
+  <div class="section">
+    <div class="rarity-title rarity-legendary">🔥 Legendary Styles</div>
+    <ul>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/f/f2/Keisuke_Yukimiya_Anime.png" alt="Yukimiya"><div class="char-details"><strong>✨ Yukimiya</strong><span>Stylish forward with glamour shots.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/b/b7/Seishiro_Nagi_Anime.png" alt="Nagi"><div class="char-details"><strong>🌙 Nagi Seishiro</strong><span>Lazy genius with impossible control.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/3/32/Otoya_Eita_Anime.png" alt="Otoya"><div class="char-details"><strong>🎭 Otoya Eita</strong><span>Sneaky player with assassin instincts.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/f/f1/Karasu_Tabito_Anime.png" alt="Karasu"><div class="char-details"><strong>🐦 Karasu Tabito</strong><span>The crow with tricky defense & speed.</span></div></li>
+    </ul>
+  </div>
+
+  <!-- Mythic -->
+  <div class="section">
+    <div class="rarity-title rarity-mythic">👑 Mythic Styles</div>
+    <ul>
+      <li><img src="https://i.imgur.com/NELreo.png" alt="NEL Reo"><div class="char-details"><strong>💸 NEL Reo</strong><span>The rich boy evolved into a powerhouse.</span></div></li>
+      <li><img src="https://i.imgur.com/NELbachira.png" alt="NEL Bachira"><div class="char-details"><strong>🎨 NEL Bachira</strong><span>The monster dribbler in awakened form.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/2/27/Rensuke_Kunigami_Anime.png" alt="Kunigami"><div class="char-details"><strong>🦁 Kunigami</strong><span>The heroic powerhouse with grit.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/8/8b/Oliver_Aiku_Anime.png" alt="Aiku"><div class="char-details"><strong>🛡️ Aiku Oliver</strong><span>Defensive giant with eagle vision.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/e/e7/Ryusei_Shouei_Anime.png" alt="Shidou"><div class="char-details"><strong>💀 Shidou Ryusei</strong><span>The beast striker full of chaos.</span></div></li>
+    </ul>
+  </div>
+
+  <!-- World Class -->
+  <div class="section">
+    <div class="rarity-title rarity-world">🌍 World Class Styles</div>
+    <ul>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/9/91/Michael_Kaiser_Anime.png" alt="Kaiser"><div class="char-details"><strong>👑 Kaiser</strong><span>The emperor with the Kaiser Impact.</span></div></li>
+      <li><img src="https://i.imgur.com/NELisagi.png" alt="NEL Isagi"><div class="char-details"><strong>⚡ NEL Isagi</strong><span>The evolved visionary with flow state.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/d/d7/Don_Lorenzo_Anime.png" alt="Don Lorenzo"><div class="char-details"><strong>💰 Don Lorenzo</strong><span>The demon defender of Italy.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/a/a4/Charles_Chevalier_Anime.png" alt="Charles"><div class="char-details"><strong>🎨 Charles Chevalier</strong><span>The artist of passing perfection.</span></div></li>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/0/0d/Itoshi_Sae_Anime.png" alt="Sae"><div class="char-details"><strong>💎 Sae Itoshi</strong><span>The prodigy midfielder, world-class elite.</span></div></li>
+      <li><img src="https://i.imgur.com/NELnagi.png" alt="NEL Nagi"><div class="char-details"><strong>🌙 NEL Nagi</strong><span>The awakened lazy genius.</span></div></li>
+      <li><img src="https://i.imgur.com/NELrin.png" alt="NEL Rin"><div class="char-details"><strong>🔥 NEL Rin</strong><span>The vengeful genius in awakened form.</span></div></li>
     </ul>
   </div>
 
   <!-- Master Class -->
-  <div class="rarity-title rarity-master">👑 Master Class Styles</div>
-  <ul class="style-list">
-    <li>
-      <img src="https://static.wikia.nocookie.net/bluelockrivals-roblox/images/7/7f/Loki.png" alt="Loki">
-      <strong>⚡ Loki</strong><br>
-      *Godspeed flow.* Ultra-fast all-round mobility shooter and dribbler :contentReference[oaicite:1]{index=1}.
-    </li>
-  </ul>
-
-  <!-- Mythic -->
-  <div class="rarity-title rarity-mythic">🌌 Mythic Styles</div>
-  <ul class="style-list">
-    <li>
-      <img src="https://static.wikia.nocookie.net/bluelockrivals-roblox/images/3/3a/NEL_Reo.png" alt="NEL Reo">
-      <strong>NEL Reo</strong><br>
-      Master of All Trades—copies other styles and adapts dynamically :contentReference[oaicite:2]{index=2}.
-    </li>
-    <li>
-      <img src="https://static.wikia.nocookie.net/bluelockrivals-roblox/images/b/b2/NEL_Bachira.png" alt="NEL Bachira">
-      <strong>NEL Bachira</strong><br>
-      Fast, unpredictable dribbler with Bee Freestyle flow :contentReference[oaicite:3]{index=3}.
-    </li>
-    <li><img src="https://via.placeholder.com/50" alt="Kunigami"><strong>Kunigami</strong><br>Powerful striker with strong shots.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Aiku"><strong>Aiku</strong><br>Defensive aerial wall.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Shidou"><strong>Shidou</strong><br>Instinctual striker.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Barou"><strong>Barou (The King)</strong><br>Dominant field presence.</li>
-  </ul>
-
-  <!-- Legendary -->
-  <div class="rarity-title rarity-legendary">⚜ Legendary Styles</div>
-  <ul class="style-list">
-    <li><img src="https://via.placeholder.com/50" alt="Yukimiya"><strong>Yukimiya</strong><br>Stylish striker with sharp vision.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Nagi"><strong>Nagi</strong><br>Prodigy with flawless ball control.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Otoya"><strong>Otoya</strong><br>Stealthy shadow striker.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Karasu"><strong>Karasu</strong><br>Unpredictable tactician.</li>
-  </ul>
-
-  <!-- World Class -->
-  <div class="rarity-title rarity-world">🌍 World Class Styles</div>
-  <ul class="style-list">
-    <li><img src="https://via.placeholder.com/50" alt="Kaiser"><strong>Kaiser</strong><br>Emperor striker powerhouse.</li>
-    <li><img src="https://via.placeholder.com/50" alt="NEL Isagi"><strong>NEL Isagi</strong><br>Visionary Neo-Egoist playmaker.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Don Lorenzo"><strong>Don Lorenzo</strong><br>Italian defender with instinct.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Charles"><strong>Charles</strong><br>Genius dribbler from Paris X Gen.</li>
-    <li>
-      <img src="https://turn0image8" alt="Sae Itoshi"><strong>Sae Itoshi</strong><br>Prolific midfield genius .
-    </li>
-    <li><img src="https://via.placeholder.com/50" alt="NEL Nagi"><strong>NEL Nagi</strong><br>Aerial control prodigy.</li>
-    <li><img src="https://via.placeholder.com/50" alt="NEL Rin"><strong>NEL Rin</strong><br>Meta-level striker intellect.</li>
-  </ul>
-
-  <!-- Epic -->
-  <div class="rarity-title rarity-epic">✨ Epic Styles</div>
-  <ul class="style-list">
-    <li><img src="https://via.placeholder.com/50" alt="Kurona"><strong>Kurona</strong><br>Agile winger with explosive runs.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Bachira Epic"><strong>Bachira</strong><br>Creative dribbler with flair.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Gagamaru"><strong>Gagamaru</strong><br>Aerial guardian striker.</li>
-  </ul>
-
-  <!-- Rare -->
-  <div class="rarity-title rarity-rare">🟢 Rare Styles</div>
-  <ul class="style-list">
-    <li><img src="https://turn0image7" alt="Isagi"><strong>Isagi</strong><br>Adaptive genius forward .</li>
-    <li><img src="https://via.placeholder.com/50" alt="Hiori"><strong>Hiori</strong><br>Creative pass maestro.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Igaguri"><strong>Igaguri</strong><br>Unpredictable wild card.</li>
-    <li><img src="https://via.placeholder.com/50" alt="Chigiri"><strong>Chigiri</strong><br>Speed demon with crimson legs.</li>
-  </ul>
-
-  <!-- Chemical Reactions -->
-  <div id="chem-reactions" style="margin-top:2em;">
-    <h2 style="font-size:1.6rem;">⚡ Chemical Reactions</h2>
-    <ul class="style-list">
-      <li>⚡ <strong>Loki</strong> ↔ <strong>Charles</strong> — deadly pass combo and power shot :contentReference[oaicite:6]{index=6}</li>
-      <li>🔥 <strong>Sae Itoshi</strong> ↔ <strong>Shidou</strong> — perfect pass followed by dragon drive :contentReference[oaicite:7]{index=7}</li>
-      <li>💥 <strong>NEL Nagi</strong> ↔ <strong>NEL Reo</strong> — custom pass + auto trap :contentReference[oaicite:8]{index=8}</li>
-      <li>🔗 <strong>Kaiser</strong> ↔ <strong>NEL Isagi</strong> — logical play set-up + new shooting move :contentReference[oaicite:9]{index=9}</li>
+  <div class="section">
+    <div class="rarity-title rarity-master">🌟 Master Class Styles</div>
+    <ul>
+      <li><img src="https://static.wikia.nocookie.net/bluelock/images/2/25/Loki_Anime.png" alt="Loki"><div class="char-details"><strong>⚡ Loki</strong><span>The trickster god with unmatched speed.</span></div></li>
     </ul>
   </div>
 
-</section>
+  <!-- Chemical Reactions -->
+  <div class="section">
+    <h2>⚗️ Chemical Reactions</h2>
+    <ul>
+      <li>🔥 Loki + Charles → Perfect Trickster Play</li>
+      <li>💎 Sae + Shidou → Elegant Chaos</li>
+      <li>🌙 NEL Nagi + 💸 NEL Reo → Best Friends Combo</li>
+      <li>👑 Kaiser + ⚡ NEL Isagi → Rivalry at Peak</li>
+    </ul>
+  </div>
+
+</body>
+</html>
+
